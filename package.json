@@ -1,0 +1,18 @@
+{
+  "name": "avaliacoes-de-jogos",
+  "version": "1.0.0",
+  "description": "Este projeto tem como objetivo implementar progressivamente e de forma didática uma aplicação web inspirada em sites de avaliações, criticas, sinopses, e informações sobre jogos eletronicos\r O frontend da aplicação foi desenvolvido com HTML, CSS e JavaScript e o backend foi simulado pela implementação de uma API Fake, usando o JSON Server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
+  }
+}
