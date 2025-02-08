@@ -17,7 +17,6 @@ https://github.com/LeonardoTosinPR/avaliacoes-de-jogos
 
 ## Dependências JavaScript
 - **JQuery** - Para realizar animações.
-- **JSON Server** - Para simular uma API Rest.
 
 ## Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
 
