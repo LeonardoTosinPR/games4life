@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+// Importar componentes do Materialize
 @import "components/tokens.module";
 @import "components/theme.module";
 //@import "components/_theme_variables";
@@ -45,3 +46,132 @@
 @import "components/pulse";
 @import "components/datepicker";
 @import "components/timepicker";
+
+// Definir variáveis de cores personalizadas
+$cores-design: (
+    "roxo": #5F0F40,
+    "vermelho": #9A031E,
+    "laranja": #E36414,
+    "amarelo": #FB8B24,
+    "azul": #0F4C5C,
+    "branco": #FFFFFF,
+    "preto": #000000
+);
+
+// Customizações de estilo
+nav {
+    background-color: map-get($cores-design, "azul");
+
+    ul {
+        li {
+            a {
+                color: map-get($cores-design, "branco") !important;
+            }
+        }
+    }
+
+    .user-area {
+        img {
+            border: 2px solid map-get($cores-design, "branco");
+        }
+
+        span {
+            color: map-get($cores-design, "branco");
+        }
+    }
+}
+
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.main-content {
+    margin-top: 6rem;
+}
+
+.user-area {
+    display: flex;
+    align-items: center;
+
+    img {
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+}
+
+.game-info {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.game-synopsis {
+    margin-top: 20px;
+}
+
+.game-images {
+    margin-top: 20px;
+
+    img {
+        margin-bottom: 10px;
+    }
+}
+
+.sidebar {
+    margin-top: 20px;
+
+    h5 {
+        margin-top: 0;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+
+            img {
+                margin-right: 10px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+.review-form {
+    margin-top: 20px;
+}
+
+// Estilos para tema claro
+@media (prefers-color-scheme: light) {
+    .game-info {
+        background-color: map-get($cores-design, "branco");
+        color: map-get($cores-design, "preto");
+    }
+}
+
+// Estilos para tema escuro
+@media (prefers-color-scheme: dark) {
+    .game-info {
+        background-color: map-get($cores-design, "azul");
+        color: map-get($cores-design, "branco");
+    }
+}
+
+// Estilos para todos os títulos (h1, h2, h3, etc.)
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: map-get($cores-design, "laranja");
+}
