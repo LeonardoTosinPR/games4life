@@ -27,7 +27,8 @@ $red: (
   "accent-1":    #FF8A80,
   "accent-2":    #FF5252,
   "accent-3":    #FF1744,
-  "accent-4":    #D50000
+  "accent-4":    #D50000,
+  "design":      #9A031E
 );
 
 $pink: (
@@ -61,7 +62,8 @@ $purple: (
   "accent-1":    #ea80fc,
   "accent-2":    #e040fb,
   "accent-3":    #d500f9,
-  "accent-4":    #aa00ff
+  "accent-4":    #aa00ff,
+  "design":      #5F0F40
 );
 
 $deep-purple: (
@@ -112,7 +114,8 @@ $blue: (
   "accent-1":    #82B1FF,
   "accent-2":    #448AFF,
   "accent-3":    #2979FF,
-  "accent-4":    #2962FF
+  "accent-4":    #2962FF,
+  "design":      #0F4C5C
 );
 
 $light-blue: (
@@ -248,7 +251,8 @@ $amber: (
   "accent-1":    #ffe57f,
   "accent-2":    #ffd740,
   "accent-3":    #ffc400,
-  "accent-4":    #ffab00
+  "accent-4":    #ffab00,
+  "design":      #FB8B24
 );
 
 $orange: (
@@ -265,7 +269,8 @@ $orange: (
   "accent-1":    #ffd180,
   "accent-2":    #ffab40,
   "accent-3":    #ff9100,
-  "accent-4":    #ff6d00
+  "accent-4":    #ff6d00,
+  "design":      #E36414
 );
 
 $deep-orange: (
@@ -353,7 +358,6 @@ $colors: (
   "grey": $grey,
   "shades": $shades
 ) !default;
-
 
 // usage: color("name_of_color", "type_of_color")
 // to avoid to repeating map-get($colors, ...)

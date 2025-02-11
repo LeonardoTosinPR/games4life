@@ -4,10 +4,10 @@ $md_sys_typescale_body-large_size: 16px;
 @use "sass:math";
 
 // Colors
-$primary-color: color("white", "darken-2") !default;
-$secondary-color: color("purple", "lighten-1") !default;
-$success-color: color("green", "base") !default;
-$link-color: color("light-blue", "darken-1") !default;
+$primary-color: color("blue", "design") !default;
+$secondary-color: color("orange", "design") !default;
+$success-color: color("purple", "design") !default;
+$link-color: color("red", "design") !default;
 
 // Floating buttons
 $button-floating-background: var(--md-sys-color-secondary) !default;

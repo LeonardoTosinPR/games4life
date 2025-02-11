@@ -46,3 +46,55 @@
 @import "components/pulse";
 @import "components/datepicker";
 @import "components/timepicker";
+
+.user-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    img {
+        border-radius: 50%;
+    }
+}
+
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 10rem;
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .btn {
+        margin-top: 1rem;
+    }
+}
+
+.review-form {
+    .btn {
+        margin-top: 20px; // Adiciona uma margem superior ao botão
+    }
+}
+
+.carousel {
+    height: 200rem; // Defina a altura desejada para o carrossel
+    width: 800rem;
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+    height: 100%; // Ajuste a altura das imagens para preencher o carrossel
+    object-fit: cover;
+}
