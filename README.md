@@ -64,10 +64,13 @@ https://github.com/LeonardoTosinPR/avaliacoes-de-jogos
 - Clonar o repositório com `git clone`
 - Fazer checkout no branch `develop` que contém as modificações mais recentes
 - Abrir o projeto no editor Visual Studio Code (VS Code)
-- Abrir um terminal pelo VSCode ou qualquer terminal do seu Sistema Operacional apontando para o diretório raiz do projeto `
-  - Comando do npm para dependencias: `npm i`
-- Abrir utilizando a extensão do VScode Live service Compiller 
+- Abrir um terminal pelo VSCode ou qualquer terminal do seu Sistema Operacional apontando para o diretório raiz do projeto 
+- Instalar as dependências contidas no `package.json`
+  - Comando: `npm i`
+- Abrir utilizando a extensão do VScode Live service Compiller
+  - Por padrão, a aplicação JSON Server executa no endereço `localhost:3000`    
 - Executar o projeto frontend.
+
 
 ## Telas da aplicação
 
