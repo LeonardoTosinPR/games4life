@@ -47,54 +47,66 @@
 @import "components/datepicker";
 @import "components/timepicker";
 
+.row {
+  padding-top: 2rem;
+}
+
+.game-info {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.game-info #game-details {
+  display: flex;
+  align-items: center; /* Alinha verticalmente */
+  justify-content: center; /* Alinha horizontalmente */
+  flex-direction: column; /* Alinha os itens em coluna */
+  text-align: center; /* Centraliza o texto */
+}
+
+.game-info #game-logo img {
+  margin-top: 4rem;
+  border-radius: 0.5rem;
+}
+
 .user-area {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-
-    img {
-        border-radius: 50%;
-    }
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
-
-.main-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    margin-top: 10rem;
-
-    h1 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-    }
-
-    p {
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
-    }
-
-    .btn {
-        margin-top: 1rem;
-    }
+.user-avatar {
+  margin-left: 1rem;
 }
 
-.review-form {
-    .btn {
-        margin-top: 20px; // Adiciona uma margem superior ao botão
-    }
+.card {
+  margin-bottom: 1rem;
 }
 
-.carousel {
-    height: 200rem; // Defina a altura desejada para o carrossel
-    width: 800rem;
+.card-content ul {
+  padding-left: 2rem;
+  list-style-type: none;
+}
+
+.card-content ul li {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.card-content ul li img {
+  margin-right: 1rem;
 }
 
 .carousel .carousel-item img {
-    width: 100%;
-    height: 100%; // Ajuste a altura das imagens para preencher o carrossel
-    object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.star-rating .star {
+  cursor: pointer;
+  font-size: 2rem;
+  color: #e36414;
 }

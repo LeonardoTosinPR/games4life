@@ -11,7 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "@materializecss/materialize": "^2.2.1",
-    "jquery": "^3.7.1"
+    "@types/jquery-mask-plugin": "^1.14.6",
+    "jquery": "^3.7.1",
+    "jquery-mask-plugin": "^1.14.16"
   },
   "devDependencies": {
     "gh-pages": "^6.2.0"

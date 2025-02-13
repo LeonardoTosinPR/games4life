@@ -3,10 +3,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>GameInfo - Detalhes do Jogo</title>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet"/>
     <link href="./assets/sass/jogo.css" rel="stylesheet" />
   </head>
   <body>
@@ -22,25 +19,20 @@
               width="300"
             />
           </a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger left">
+            <i class="material-icons">menu</i>
+          </a>
           <ul class="right hide-on-med-and-down">
-            <li>
-              <a href="#home"> Home </a>
-            </li>
-            <li>
-              <a href="#games"> Jogos </a>
-            </li>
-            <li>
-              <a href="#noticias"> Notícias </a>
-            </li>
-            <li>
-              <a href="#comunidade"> Comunidade </a>
-            </li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#games">Jogos</a></li>
+            <li><a href="#noticias">Notícias</a></li>
+            <li><a href="#comunidade">Comunidade</a></li>
             <li>
               <div class="user-area">
                 <a href="#perfil">
                   <img
                     alt="Avatar do usuário"
-                    class="circle"
+                    class="circle user-avatar"
                     height="40"
                     src="https://storage.googleapis.com/a1aa/image/--cwFpgmjxLd3hIFHmXv_rc8_uNAuN7fTi-TDMKl-Ko.jpg"
                     width="40"
@@ -52,22 +44,32 @@
         </div>
       </nav>
     </div>
+
+    <!-- Sidenav -->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#games">Jogos</a></li>
+      <li><a href="#noticias">Notícias</a></li>
+      <li><a href="#comunidade">Comunidade</a></li>
+      <li><a href="#perfil">Perfil</a></li>
+    </ul>
     <!-- Main Content -->
     <div class="container main-content">
       <div class="row">
         <div class="col s12 m8">
           <div class="game-info">
             <div class="row">
-              <div class="col s12 m4">
+              <div class="col s12 m4 center" id="game-logo">
                 <img
                   alt="Capa do jogo com título e imagem representativa"
                   class="responsive-img z-depth-3"
                   height="450"
+                  
                   src="./images/rdr2.jpg"
                   width="300"
                 />
               </div>
-              <div class="col s12 m8">
+              <div class="col s12 m8" id="game-details">
                 <h2>Red Dead Redemption 2</h2>
                 <p>
                   <strong> Data de Lançamento: </strong>
@@ -108,58 +110,24 @@
                 </p>
               </div>
             </div>
-            <!-- <div class="row game-images">
-              <div class="col s12">
-                <h4>Imagens do Jogo</h4>
-                <div class="row">
-                  <div class="col s12 m4">
-                    <img
-                      alt="Imagem do jogo mostrando uma cena de ação"
-                      class="responsive-img z-depth-2"
-                      height="200"
-                      src="https://storage.googleapis.com/a1aa/image/YOxcHif5zGuPcxRkRg-wzctJOQYSsYm0wDG_G0UEAM0.jpg"
-                      width="300"
-                    />
-                  </div>
-                  <div class="col s12 m4">
-                    <img
-                      alt="Imagem do jogo mostrando um personagem principal"
-                      class="responsive-img z-depth-2"
-                      height="200"
-                      src="https://storage.googleapis.com/a1aa/image/5ShfBo2UpLTwaM0iOv7-WteGqCbk5hEfH3w6q-ln790.jpg"
-                      width="300"
-                    />
-                  </div>
-                  <div class="col s12 m4">
-                    <img
-                      alt="Imagem do jogo mostrando um cenário detalhado"
-                      class="responsive-img z-depth-2"
-                      height="200"
-                      src="https://storage.googleapis.com/a1aa/image/20NwjNnvbqtHH8OpUoHRNN-_VaV4g8i35U-1glzes4I.jpg"
-                      width="300"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div> -->
             <div class="col s13 m10 game-images">
               <h4>Imagens do Jogo</h4>
               <div class="carousel">
-                <a class="carousel-item" href="#one!">
-                  <img alt="1 imagem do jogo" src="./images/rdrex1.jpg" />
-                </a>
-                <a class="carousel-item" href="#two!">
-                  <img alt="2 imagem do jogo" src="./images/rdrex2.webp" />
-                </a>
-                <a class="carousel-item" href="#three!">
-                  <img alt="3 imagem do jogo" src="./images/rdrex3.jpg" />
-                </a>
-                <a class="carousel-item" href="#four!">
-                  <img alt="4 imagem do jogo" src="./images/rdrex4.webp" />
-                </a>
-                <a class="carousel-item" href="#five!">
-                  <img alt="5 imagem do jogo" src="./images/rdrex5.jpg" />
-                </a>
+                <a class="carousel-item" href="#one!"
+                  ><img alt="1 imagem do jogo" src="./images/rdrex1.jpg"
+                /></a>
+                <a class="carousel-item" href="#two!"
+                  ><img alt="2 imagem do jogo" src="./images/rdrex2.webp"
+                /></a>
+                <a class="carousel-item" href="#three!"
+                  ><img alt="3 imagem do jogo" src="./images/rdrex3.jpg"
+                /></a>
+                <a class="carousel-item" href="#four!"
+                  ><img alt="4 imagem do jogo" src="./images/rdrex4.webp"
+                /></a>
+                <a class="carousel-item" href="#five!"
+                  ><img alt="5 imagem do jogo" src="./images/rdrex5.jpg"
+                /></a>
               </div>
             </div>
           </div>
@@ -175,22 +143,123 @@
                       id="review"
                       name="review"
                     ></textarea>
-                    <label for="review"> Sua Review </label>
+                    <label for="review">Sua Review</label>
                   </div>
                 </div>
                 <div class="row">
                   <div class="input-field col s12">
-                    <button
-                      class="btn waves-effect waves-light blue darken-4"
-                      type="submit"
-                    >
-                      Enviar
-                      <i class="material-icons right"> send </i>
+                    <div class="star-rating">
+                      <i class="material-icons star" data-value="1"
+                        >star_border</i
+                      >
+                      <i class="material-icons star" data-value="2"
+                        >star_border</i
+                      >
+                      <i class="material-icons star" data-value="3"
+                        >star_border</i
+                      >
+                      <i class="material-icons star" data-value="4"
+                        >star_border</i
+                      >
+                      <i class="material-icons star" data-value="5"
+                        >star_border</i
+                      >
+                    </div>
+                    <input type="hidden" id="rating" name="rating" value="0" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <button class="btn waves-effect waves-light orange design"type="submit">
+                      Enviar 
+                      <i class="material-icons right">send</i>
                     </button>
                   </div>
                 </div>
               </form>
             </div>
+          </div>
+          <!-- Reviews Section -->
+          <div class="container col s13 m9" id="reviews">
+            <h3>Reviews dos Usuários</h3>
+            <ul class="collection">
+              <li class="collection-item avatar">
+                <img
+                  alt="Avatar do usuário 1"
+                  class="circle"
+                  height="100"
+                  src="https://storage.googleapis.com/a1aa/image/--cwFpgmjxLd3hIFHmXv_rc8_uNAuN7fTi-TDMKl-Ko.jpg"
+                  width="100"
+                />
+                <span class="title"> Usuário 1 </span>
+                <p>
+                  <span class="material-icons"> star </span>
+                  <span class="material-icons"> star </span>
+                  <span class="material-icons"> star </span>
+                  <span class="material-icons"> star </span>
+                  <span class="material-icons"> star_half </span>
+                  <br />
+                  "Ótimo jogo, gráficos incríveis e jogabilidade envolvente!"
+                </p>
+              </li>
+              <li class="collection-item avatar">
+                <img
+                  alt="Avatar do usuário 2"
+                  class="circle"
+                  height="100"
+                  src="https://storage.googleapis.com/a1aa/image/61VefrN6g9JZlUIqblcuCTdCyUOaLiZe0-e3zCPZ06o.jpg"
+                  width="100"
+                />
+                <span class="title"> Usuário 2 </span>
+                <p>
+                  <span class="material-icons"> star </span>
+                  <span class="material-icons"> star </span>
+                  <span class="material-icons"> star </span>
+                  <span class="material-icons"> star_border </span>
+                  <span class="material-icons"> star_border </span>
+                  <br />
+                  "Bom jogo, mas poderia ter mais conteúdo."
+                </p>
+              </li>
+              <li class="collection-item avatar">
+                <img
+                  alt="Avatar do usuário 3"
+                  class="circle"
+                  height="100"
+                  src="https://storage.googleapis.com/a1aa/image/ysGY-67LKCmUNysai8uOg8j-eI7HhtSyGjaUXEz9i2w.jpg"
+                  width="100"
+                />
+                <span class="title"> Usuário 3 </span>
+                <p>
+                  <span class="material-icons"> star </span>
+                  <span class="material-icons"> star </span>
+                  <span class="material-icons"> star </span>
+                  <span class="material-icons"> star </span>
+                  <span class="material-icons"> star </span>
+                  <br />
+                  "Melhor jogo do ano! Recomendo a todos."
+                </p>
+              </li>
+              <li class="collection-item avatar">
+                <img
+                  alt="Avatar do usuário 4"
+                  class="circle"
+                  height="100"
+                  src="https://storage.googleapis.com/a1aa/image/Ecf-5CQfq_isQak0QHbsdxSBz6cQ_nkvqr87urC-_WM.jpg"
+                  width="100"
+                />
+                <span class="title"> Usuário 4 </span>
+                <p>
+                  <span class="material-icons"> star </span>
+                  <span class="material-icons"> star </span>
+                  <span class="material-icons"> star_half </span>
+                  <span class="material-icons"> star_border </span>
+                  <span class="material-icons"> star_border </span>
+                  <br />
+                  "Esperava mais do jogo, mas ainda assim é divertido."
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
         <!-- Sidebar -->
@@ -346,88 +415,6 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- Reviews Section -->
-    <div class="container">
-      <h3>Reviews dos Usuários</h3>
-      <ul class="collection">
-        <li class="collection-item avatar">
-          <img
-            alt="Avatar do usuário 1"
-            class="circle"
-            height="100"
-            src="https://storage.googleapis.com/a1aa/image/--cwFpgmjxLd3hIFHmXv_rc8_uNAuN7fTi-TDMKl-Ko.jpg"
-            width="100"
-          />
-          <span class="title"> Usuário 1 </span>
-          <p>
-            <span class="material-icons"> star </span>
-            <span class="material-icons"> star </span>
-            <span class="material-icons"> star </span>
-            <span class="material-icons"> star </span>
-            <span class="material-icons"> star_half </span>
-            <br />
-            "Ótimo jogo, gráficos incríveis e jogabilidade envolvente!"
-          </p>
-        </li>
-        <li class="collection-item avatar">
-          <img
-            alt="Avatar do usuário 2"
-            class="circle"
-            height="100"
-            src="https://storage.googleapis.com/a1aa/image/61VefrN6g9JZlUIqblcuCTdCyUOaLiZe0-e3zCPZ06o.jpg"
-            width="100"
-          />
-          <span class="title"> Usuário 2 </span>
-          <p>
-            <span class="material-icons"> star </span>
-            <span class="material-icons"> star </span>
-            <span class="material-icons"> star </span>
-            <span class="material-icons"> star_border </span>
-            <span class="material-icons"> star_border </span>
-            <br />
-            "Bom jogo, mas poderia ter mais conteúdo."
-          </p>
-        </li>
-        <li class="collection-item avatar">
-          <img
-            alt="Avatar do usuário 3"
-            class="circle"
-            height="100"
-            src="https://storage.googleapis.com/a1aa/image/ysGY-67LKCmUNysai8uOg8j-eI7HhtSyGjaUXEz9i2w.jpg"
-            width="100"
-          />
-          <span class="title"> Usuário 3 </span>
-          <p>
-            <span class="material-icons"> star </span>
-            <span class="material-icons"> star </span>
-            <span class="material-icons"> star </span>
-            <span class="material-icons"> star </span>
-            <span class="material-icons"> star </span>
-            <br />
-            "Melhor jogo do ano! Recomendo a todos."
-          </p>
-        </li>
-        <li class="collection-item avatar">
-          <img
-            alt="Avatar do usuário 4"
-            class="circle"
-            height="100"
-            src="https://storage.googleapis.com/a1aa/image/Ecf-5CQfq_isQak0QHbsdxSBz6cQ_nkvqr87urC-_WM.jpg"
-            width="100"
-          />
-          <span class="title"> Usuário 4 </span>
-          <p>
-            <span class="material-icons"> star </span>
-            <span class="material-icons"> star </span>
-            <span class="material-icons"> star_half </span>
-            <span class="material-icons"> star_border </span>
-            <span class="material-icons"> star_border </span>
-            <br />
-            "Esperava mais do jogo, mas ainda assim é divertido."
-          </p>
-        </li>
-      </ul>
     </div>
     <!-- Similar Recommendations Section -->
     <div class="container">
