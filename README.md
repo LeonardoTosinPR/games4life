@@ -8,6 +8,7 @@ https://www.figma.com/design/hEHvoUrmRoRM8WKBU03gJj/projeto-games4life?node-id=0
 
 
 ## Design System: 
+https://drive.google.com/file/d/1zcXabY9RG6V74kk659U5xIHRXH07xh2d/view?usp=sharing
 
 ## Site em Produção - GitHub Pages
 https://github.com/LeonardoTosinPR/avaliacoes-de-jogos
@@ -52,10 +53,10 @@ https://github.com/LeonardoTosinPR/avaliacoes-de-jogos
 - ~[ ] ID 22 - Utiliza bibliotecas de web components, como Lit, para criar componentes reutilizáveis e encapsulados, melhorando a modularidade e a manutenibilidade das páginas web.~ 
 - ~[ ] ID 23 - Utiliza uma biblioteca de componentes prontos, como Material Web Components ou outra de escolha, ou então, algum componente independente (standalone) a fim de oferecer funcionalidades específicas sem a necessidade de estar integrado a uma biblioteca completa.~
 
-#### RA5 - Efetuar requisições assíncronas para uma API fake e APIs públicas, permitindo a obtenção e manipulação de dados dinamicamente.
-- [ ] ID 24 - Realiza requisições assíncronas para APIs públicas, utilizando adequadamente conceitos como AJAX, Fetch API ou bibliotecas, para obter dados dinâmicos e a exibição dos resultados na página web.
-- [ ] ID 25 - Realiza requisições assíncronas para uma API fake utilizando adequadamente conceitos como AJAX, Fetch API ou bibliotecas, para persistir os dados originados de um formulário.
-- [ ] ID 26 - Realiza requisições assíncronas para uma API fake utilizando adequadamente conceitos como AJAX, Fetch API ou bibliotecas, para exibição dos dados na página web.
+#### ~RA5 - Efetuar requisições assíncronas para uma API fake e APIs públicas, permitindo a obtenção e manipulação de dados dinamicamente.~ 
+- ~[ ] ID 24 - Realiza requisições assíncronas para APIs públicas, utilizando adequadamente conceitos como AJAX, Fetch API ou bibliotecas, para obter dados dinâmicos e a exibição dos resultados na página web.~
+- ~[ ] ID 25 - Realiza requisições assíncronas para uma API fake utilizando adequadamente conceitos como AJAX, Fetch API ou bibliotecas, para persistir os dados originados de um formulário.~
+- ~[ ] ID 26 - Realiza requisições assíncronas para uma API fake utilizando adequadamente conceitos como AJAX, Fetch API ou bibliotecas, para exibição dos dados na página web.~
 
 (por conta do curto periodo de tempo das aulas e conteudos trabalhados o RA5 será uma nota complementar caso seus requisitos sejam feitos).
 
