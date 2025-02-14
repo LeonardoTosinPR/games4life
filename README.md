@@ -79,3 +79,7 @@ registro:
 login:
 ![image](https://github.com/user-attachments/assets/c87295e6-160b-4ebc-b5a4-9e9c21a1f795)
 
+jogo:
+![image](https://github.com/user-attachments/assets/48b7757f-1d68-430a-9972-51c0d9708a40)
+
+
