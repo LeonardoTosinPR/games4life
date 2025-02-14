@@ -35,21 +35,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (storedUserData && storedUserData.email === email && storedUserData.password === password) {
       // Exibir animação de sucesso
-      $('body').append('<div id="success-message" style="display:none;">Login bem-sucedido!</div>');
-      $('#success-message').css({
-        'position': 'fixed',
-        'top': '50%',
-        'left': '50%',
-        'transform': 'translate(-50%, -50%)',
-        'padding': '20px',
-        'background-color': '#4caf50',
-        'color': 'white',
-        'font-size': '20px',
-        'border-radius': '5px',
-        'z-index': '1000'
-      }).fadeIn(500).delay(2000).fadeOut(500, function() {
-        $(this).remove();
-        window.location.href = './jogo.html';
+      const successMessage = document.createElement('div');
+      successMessage.id = 'success-message';
+      successMessage.style.display = 'none';
+      successMessage.textContent = 'Login bem-sucedido!';
+      form.appendChild(successMessage);
+      Object.assign(successMessage.style, {
+        padding: '20px',
+        backgroundColor: '#4caf50',
+        color: 'white',
+        fontSize: '20px',
+        borderRadius: '5px',
+        marginTop: '20px',
+        textAlign: 'center'
+      });
+      $(successMessage).slideDown(500).delay(2000).slideUp(500, function() {
+        successMessage.remove();
+        window.location.href = './perfil.html';
       });
     } else {
       alert('Email ou senha incorretos.');

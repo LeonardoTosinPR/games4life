@@ -65,9 +65,16 @@
 }
 
 .modal {
-  max-height: 75%;
+  max-height: 85%;
+  width: 50%;
 }
 
 .input-field select {
   display: block;
+  height: auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  margin-bottom: 20px;
 }

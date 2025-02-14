@@ -75,68 +75,67 @@
                 <strong>Data de Nascimento:</strong>
                 <span id="user-birthdate"></span>
               </p>
-              <p>
-                <strong>Plataformas Preferidas:</strong>
-                <span id="user-platforms"></span>
-              </p>
-            </div>
-            <div class="card-action">
-              <a href="#edit-modal" class="modal-trigger">Editar Perfil</a>
+              <form id="edit-password-form">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input
+                      id="edit-password"
+                      type="password"
+                      class="validate"
+                      required
+                    />
+                    <label for="edit-password">Nova Senha</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12">
+                    <button
+                      class="btn waves-effect waves-light orange design"
+                      type="submit"
+                    >
+                      Salvar
+                      <i class="material-icons right">save</i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+              <div class="row">
+                <div class="col s12">
+                  <button
+                    id="logout-button"
+                    class="btn waves-effect waves-light red"
+                  >
+                    Sair
+                    <i class="material-icons right">exit_to_app</i>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Modal de Edição -->
-    <div id="edit-modal" class="modal">
-      <div class="modal-content">
-        <h4>Editar Perfil</h4>
-        <form id="edit-form">
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="edit-email" type="email" class="validate" required />
-              <label for="edit-email">Email</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input
-                id="edit-birthdate"
-                type="date"
-                class="validate"
-                required
-              />
-              <label for="edit-birthdate">Data de Nascimento</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <select multiple id="edit-platforms">
-                <option value="PlayStation">PlayStation</option>
-                <option value="Xbox">Xbox</option>
-                <option value="PC">PC</option>
-                <option value="Switch">Switch</option>
-              </select>
-              <label for="edit-platforms">Plataformas Preferidas</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col s12">
-              <button
-                class="btn waves-effect waves-light orange design"
-                type="submit"
-              >
-                Salvar
-                <i class="material-icons right">save</i>
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./perfil.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const userData = JSON.parse(localStorage.getItem("userData"));
+        if (!userData) {
+          window.location.href = "./login.html";
+        } else {
+          document.getElementById("user-email").textContent = userData.email;
+          document.getElementById("user-birthdate").textContent =
+            userData.birthdate;
+        }
+
+        document
+          .getElementById("logout-button")
+          .addEventListener("click", function () {
+            localStorage.removeItem("userData");
+            window.location.href = "./login.html";
+          });
+      });
+    </script>
   </body>
 </html>
