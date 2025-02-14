@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Verificar se o usuário está logado
   function checkLoginStatus() {
-    const userData = localStorage.getItem('userData');
+    var userData = localStorage.getItem('userData');
     const userAvatar = document.querySelector('.user-avatar');
     const loginLink = document.querySelector('.login-link');
 
@@ -18,19 +18,19 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   checkLoginStatus();
-}); //iniciando menu lateral mobile
+});
 
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.querySelector('form');
   const emailInput = document.getElementById('email');
-  const passwordInput = document.getElementById('password');
+  var passwordInput = document.getElementById('password');
   const birthdateInput = document.getElementById('birthdate');
 
   form.addEventListener('submit', function(event) {
     event.preventDefault();
 
     const email = emailInput.value;
-    const password = passwordInput.value;
+    var password = passwordInput.value;
     const birthdate = birthdateInput.value;
 
     let isValid = true;
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (isValid) {
       // Se todas as validações passarem, armazene os dados no LocalStorage
-      const userData = {
+      var userData = {
         email: email,
         password: password,
         birthdate: birthdate

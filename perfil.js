@@ -14,25 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (userData) {
       document.getElementById('user-email').textContent = userData.email;
       document.getElementById('user-birthdate').textContent = userData.birthdate;
-      document.getElementById('user-platforms').textContent = userData.platforms ? userData.platforms.join(', ') : '';
     }
   }
-
-  // Salvar informações do perfil
-  document.getElementById('edit-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    const password = document.getElementById('edit-password').value;
-    const platforms = Array.from(document.getElementById('edit-platforms').selectedOptions).map(option => option.value);
-
-    const userData = JSON.parse(localStorage.getItem('userData'));
-    userData.password = password;
-    userData.platforms = platforms;
-
-    localStorage.setItem('userData', JSON.stringify(userData));
-    loadProfile();
-    M.Modal.getInstance(document.getElementById('edit-modal')).close();
-  });
 
   // Adicionar funcionalidade de logout
   document.getElementById('logout-button').addEventListener('click', function() {

@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Verificar se o usuário está logado
   function checkLoginStatus() {
-    const userData = localStorage.getItem('userData');
+    var userData = localStorage.getItem('userData');
     const userAvatar = document.querySelector('.user-avatar');
     const loginLink = document.querySelector('.login-link');
 
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   checkLoginStatus();
-}); //iniciando menu lateral mobile
+});
 
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.querySelector('form');
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     event.preventDefault();
 
     const email = emailInput.value;
-    const password = passwordInput.value;
+    var password = passwordInput.value;
 
     const storedUserData = JSON.parse(localStorage.getItem('userData'));
 
