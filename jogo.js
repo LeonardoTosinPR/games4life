@@ -1,4 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
+  // Verificar se o usuário está logado
+  function checkLoginStatus() {
+    const userData = localStorage.getItem('userData');
+    const userAvatar = document.querySelector('.user-avatar');
+    const loginLink = document.querySelector('.login-link');
+
+    if (!userData) {
+      alert('Você precisa estar logado para acessar esta página.');
+      window.location.href = './login.html';
+    } else {
+      userAvatar.style.display = 'block';
+      loginLink.style.display = 'none';
+    }
+  }
+
+  checkLoginStatus();
+
   var elems = document.querySelectorAll('.carousel');
   var instances = M.Carousel.init(elems, {
     fullWidth: true,
@@ -6,15 +23,15 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 }); //iniciando carrossel
 
+
+const instance = M.Carousel.init({
+  fullWidth: true
+});
+
 document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.sidenav');
   var instances = M.Sidenav.init(elems);
 }); //iniciando menu lateral mobile
-
-const instance = M.Carousel.init({
-    fullWidth: true
-});
-
 
 
 // CODIGO PROPRIO: FAZENDO SISTEMA DE AVALIAÇÃO COM ESTRELAS

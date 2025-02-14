@@ -2,10 +2,14 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>GameInfo - Detalhes do Jogo</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet"/>
+    <title>Games4life - Red Dead Redemption 2</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link href="./assets/sass/jogo.css" rel="stylesheet" />
   </head>
+
   <body>
     <!-- Navbar -->
     <div class="navbar-fixed">
@@ -24,15 +28,20 @@
           </a>
           <ul class="right hide-on-med-and-down">
             <li><a href="#home">Home</a></li>
-            <li><a href="#games">Jogos</a></li>
+            <li><a href="./jogo.html">Jogos</a></li>
             <li><a href="#noticias">Notícias</a></li>
             <li><a href="#comunidade">Comunidade</a></li>
             <li>
               <div class="user-area">
-                <a href="#perfil">
+                <a href="./login.html" class="login-link">Entrar/Registrar</a>
+                <a
+                  href="./perfil.html"
+                  class="user-avatar"
+                  style="display: none"
+                >
                   <img
                     alt="Avatar do usuário"
-                    class="circle user-avatar"
+                    class="circle"
                     height="40"
                     src="https://storage.googleapis.com/a1aa/image/--cwFpgmjxLd3hIFHmXv_rc8_uNAuN7fTi-TDMKl-Ko.jpg"
                     width="40"
@@ -48,10 +57,10 @@
     <!-- Sidenav -->
     <ul class="sidenav" id="mobile-demo">
       <li><a href="#home">Home</a></li>
-      <li><a href="#games">Jogos</a></li>
+      <li><a href="./jogo.html">Jogos</a></li>
       <li><a href="#noticias">Notícias</a></li>
       <li><a href="#comunidade">Comunidade</a></li>
-      <li><a href="#perfil">Perfil</a></li>
+      <li><a href="./registro.html">Perfil</a></li>
     </ul>
     <!-- Main Content -->
     <div class="container main-content">
@@ -64,7 +73,6 @@
                   alt="Capa do jogo com título e imagem representativa"
                   class="responsive-img z-depth-3"
                   height="450"
-                  
                   src="./images/rdr2.jpg"
                   width="300"
                 />
@@ -170,8 +178,11 @@
                 </div>
                 <div class="row">
                   <div class="input-field col s12">
-                    <button class="btn waves-effect waves-light orange design"type="submit">
-                      Enviar 
+                    <button
+                      class="btn waves-effect waves-light orange design"
+                      type="submit"
+                    >
+                      Enviar
                       <i class="material-icons right">send</i>
                     </button>
                   </div>

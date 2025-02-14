@@ -8822,28 +8822,6 @@ input[type=text].text-primary {
     border-top-left-radius: 0;
   }
 }
-.row {
-  padding-top: 2rem;
-}
-
-.game-info {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-.game-info #game-details {
-  display: flex;
-  align-items: center; /* Alinha verticalmente */
-  justify-content: center; /* Alinha horizontalmente */
-  flex-direction: column; /* Alinha os itens em coluna */
-  text-align: center; /* Centraliza o texto */
-}
-
-.game-info #game-logo img {
-  margin-top: 4rem;
-  border-radius: 0.5rem;
-}
-
 .user-area {
   display: flex;
   align-items: center;
@@ -8854,35 +8832,18 @@ input[type=text].text-primary {
   margin-left: 1rem;
 }
 
+.row {
+  padding-top: 2rem;
+}
+
 .card {
-  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
-.card-content ul {
-  padding-left: 2rem;
-  list-style-type: none;
+.modal {
+  max-height: 75%;
 }
 
-.card-content ul li {
-  margin-bottom: 1rem;
-  padding-left: 2rem;
-  display: flex;
-  align-items: center;
-}
-
-.card-content ul li img {
-  margin-right: 1rem;
-}
-
-.carousel .carousel-item img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.star-rating .star {
-  cursor: pointer;
-  font-size: 2rem;
-  color: #e36414;
-}/*# sourceMappingURL=jogo.css.map */
+.input-field select {
+  display: block;
+}/*# sourceMappingURL=perfil.css.map */
