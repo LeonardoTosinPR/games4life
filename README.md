@@ -4,7 +4,7 @@ Este projeto tem como objetivo implementar progressivamente e de forma didática
 O frontend da aplicação foi desenvolvido com HTML, CSS e JavaScript e o backend foi simulado pela implementação de uma API Fake, usando o JSON Server.
 
 
-##Video da apresentação do projeto:
+## Video da apresentação do projeto:
 https://youtu.be/DwpWj3vwmho
 
 ## Design das Telas - Figma: 
