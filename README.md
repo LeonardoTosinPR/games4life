@@ -3,6 +3,10 @@
 Este projeto tem como objetivo implementar progressivamente e de forma didática uma aplicação web inspirada em sites de avaliações, criticas, sinopses, e informações sobre jogos eletronicos
 O frontend da aplicação foi desenvolvido com HTML, CSS e JavaScript e o backend foi simulado pela implementação de uma API Fake, usando o JSON Server.
 
+
+##Video da apresentação do projeto:
+https://youtu.be/DwpWj3vwmho
+
 ## Design das Telas - Figma: 
 https://www.figma.com/design/hEHvoUrmRoRM8WKBU03gJj/projeto-games4life?node-id=0-1&t=LBHcW8mz3gpiv0wT-1
 
